@@ -1,0 +1,70 @@
+
+
+.showComment{
+    width:100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(16,13,13,0.4);
+    
+
+}
+.container{
+    display: flex;
+    width: 80%;
+    height: 500px;
+    background: white;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+.postPic{
+    background-color: black;
+    align-items: center;
+    display: flex;
+}
+.postPic img{
+   
+    object-fit: contain;
+    width: 100%;
+}
+.details{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.comment-section{
+    flex-grow: 4;
+    text-align: left;
+    margin-left: 10px;
+
+}
+.commenter{
+    font-weight: bolder;
+
+}
+.close-Comment{
+    position: fixed;
+    /* background: wheat; */
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    /* font-weight: 600; */
+    top: 1%;
+    right: 5%;
+
+}
+.deletePost{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.deletePost:hover{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+}
+

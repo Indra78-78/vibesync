@@ -1,0 +1,114 @@
+/* Profile styles */
+.profile {
+    margin: 25px 10px;
+    padding-top: 0;
+}
+
+.profile-frame {
+    display: -webkit-inline-box;
+    justify-content: space-evenly;
+}
+
+.profile-pic {
+    height: fit-content;
+    padding: 7px;
+}
+
+.profile-pic > img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* This ensures the image fills the circular frame */
+    border: 2px solid #fff; /* Optional: add a border */
+}
+
+.profile-data > h1 {
+    padding: 0px 5px;
+}
+
+.profile-info p {
+    padding: 0px 5px;
+}
+
+/* Button styles */
+.followBtn,
+.messageBtn {
+    border: none;
+    outline: none;
+    /* display: block; */
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+.btns{
+    display: block;
+}
+
+.followBtn {
+    background-color: black; /* Green */
+    color: white;
+}
+
+.messageBtn {
+    background-color: black; /* Blue */
+    color: white;
+}
+
+.followBtn:hover,
+.messageBtn:hover {
+    opacity: 0.8;
+}
+
+.followBtn:active,
+.messageBtn:active {
+    transform: translateY(2px);
+}
+
+.followBtn:focus,
+.messageBtn:focus {
+    box-shadow: 0 0 0 2px #4CAF50; /* Green outline when focused */
+}
+
+/* Gallery styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease; /* Adds a smooth transition for hover effect */
+}
+
+.gallery .item img, 
+.gallery .item video {
+    width: 100%;
+    height: 200px; /* Sets a fixed height */
+    object-fit: cover; /* Ensures the media covers the container without stretching */
+}
+
+.gallery .item:hover {
+    transform: scale(1.05); /* Slightly enlarges the media on hover for a dynamic effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on small screens */
+    }
+}
