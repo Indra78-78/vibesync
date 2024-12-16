@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import logo from "../image/logo.png"; // Ensure the correct path
-// import "../css/navbar.css"; // Ensure the correct path
+// import logo from "../image/logo.png"; // Ensure the correct path
+import "../css/navbar.css"; // Ensure the correct path
 import { Link } from "react-router-dom";
 import { LoginContext } from "../context/loginContext";
 import { AiFillMessage } from "react-icons/ai"; // Ensure the correct path
