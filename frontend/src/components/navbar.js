@@ -9,7 +9,7 @@ export default function Navbar({ login }) {
   const { setModalOpen } = useContext(LoginContext);
 
   const loginStatus = () => {
-    
+
     const token = localStorage.getItem("jwt");
     if (login || token) {
       return (
@@ -40,7 +40,7 @@ export default function Navbar({ login }) {
       return (
         <>
           <div className="nav-top">
-            // <img src={logo} alt="logo" id="insta-logo" />
+            {/* // <img src={logo} alt="logo" id="insta-logo" /> */}
             <ul>
               <li className="notification"><Link to="/notification"><span className="material-symbols-outlined">notifications</span></Link></li>
               <li className="msg"><Link to="/Message"><AiFillMessage style={{ fontSize:"xxx-large" }} /></Link></li>
