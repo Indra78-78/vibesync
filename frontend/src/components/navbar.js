@@ -9,6 +9,7 @@ export default function Navbar({ login }) {
   const { setModalOpen } = useContext(LoginContext);
 
   const loginStatus = () => {
+    
     const token = localStorage.getItem("jwt");
     if (login || token) {
       return (
