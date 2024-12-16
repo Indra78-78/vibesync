@@ -14,7 +14,6 @@ export default function Navbar({ login }) {
     if (login || token) {
       return (
         <>
-          <img alt="logo"/>
           <Link to="/profile"><li key="profile">Profile</li></Link>
           <Link to="/createPost"><li key="createPost">Create Post</li></Link>
           <Link to="/followingpost"><li key="followingPost">Following</li></Link>
@@ -40,7 +39,7 @@ export default function Navbar({ login }) {
       return (
         <>
           <div className="nav-top">
-            <img alt="logo" id="insta-logo" />
+          
             <ul>
               <li className="notification"><Link to="/notification"><span className="material-symbols-outlined">notifications</span></Link></li>
               <li className="msg"><Link to="/Message"><AiFillMessage style={{ fontSize:"xxx-large" }} /></Link></li>
