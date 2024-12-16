@@ -46,7 +46,7 @@ export default function Navbar({ login }) {
             </ul>
           </div>
           <ul className="nav-bottom">
-            <li key="home"><Link to="/"><span className="material-symbols-outlined">home</span></Link></li>
+            // <li key="home"><Link to="/"><span className="material-symbols-outlined">home</span></Link></li>
             <li key="profile"><Link to="/profile"><span className="material-symbols-outlined">person</span></Link></li>
             <li key="createPost"><Link to="/createPost"><span className="material-symbols-outlined">add</span></Link></li>
             <li key="followingPost"><Link to="/followingpost"><span className="material-symbols-outlined">explore</span></Link></li>
