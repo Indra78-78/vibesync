@@ -1,0 +1,182 @@
+.navbar {
+    background: #fff;
+    /* border-bottom: 2px solid; */
+    padding-top: 25px;
+    width: 100%;
+    height: 60px;
+
+}
+.navbar img{
+    height: 40px;
+    width: 200px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px
+}
+.nav-menu a {
+    text-decoration: none;
+}
+
+.nav-mobile {
+    width: 100%;
+    display: none;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 2px 5px #ccc;
+    z-index: 1000;
+}
+
+.nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px -2px 5px #ccc;
+    z-index: 1000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bottom li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#insta-logo {
+    width: 170px;
+    height: auto;
+}
+
+.primaryBtn {
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 7px 12px;
+    border-radius: 10px;
+}
+
+.primaryBtn:hover {
+    background-color: black;
+    
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 7px 12px;
+    border-radius: 10px;
+}@media screen and (max-width: 800px) {
+    .nav-top {
+        display: flex;
+        height: 6%;
+        align-items: center;
+        padding: 10px 10px;
+    }
+    
+    .nav-top ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .navbar {
+        background: #fff;
+        height: 40px;
+        padding-top: 10px; /* Adjusted padding */
+        width: 100%;
+        border-bottom: 1px solid #ccc; /* Added border for better separation */
+    }
+
+    .nav-top li {
+        margin: 0 10px; /* Increased spacing between list items */
+    }
+    
+    .nav-top a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333; /* Changed text color */
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-mobile {
+        display: block;
+    }
+    
+    .nav-bottom {
+        bottom: -7px;
+        box-shadow: 0 -2px 5px #ccc;
+        background-color: #f9f9f9;
+        border-top: 1px solid #ccc;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 7% 0; /* Added border for better separation */
+    }
+
+    .material-symbols-outlined-log,
+    .primaryBtnlogout {
+        cursor: pointer;
+    }
+
+    .primaryBtn {
+        background-color: white;
+        border: 1px solid #ccc; /* Added border */
+        color: #000;
+        text-align: center;
+        padding: 7px 12px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .material-symbols-outlined {
+        cursor: pointer;
+        font-size: 24px;
+        margin-right: 10px;
+        font-size: xxx-large;
+    }
+
+    .msg {
+        padding-right: 15px;
+    }
+    .material-symbols-outlined {
+        cursor: pointer;
+        font-size: xxx-large;
+        margin-right: 10px;
+    }
+
+    .notification {
+        padding-left: 5px;
+    }
+}

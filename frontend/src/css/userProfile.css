@@ -1,0 +1,117 @@
+.profile {
+    margin: 15px auto;
+    padding-top: 0;
+}
+
+.profile-frame {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-pic {
+    height: fit-content;
+    padding: 7px;
+}
+
+.profile-pic > img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the circular frame */
+    border: 2px solid #fff; /* Optional: add a border */
+}
+
+.profile-data > h1 {
+    padding: 0px 5px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-info p {
+    padding: 0px 5px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adds space between items */
+    margin-top: 20px; /* Adds space between gallery and the rest of the profile */
+}
+
+.gallery .item {
+    flex: 1 1 calc(100% - 20px); /* Default to one item per row on small screens */
+    max-width: 100%; /* Ensure items do not exceed 100% width */
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+    margin-bottom: 10px; /* Adds space between rows */
+}
+
+.gallery .item img, 
+.gallery .item video {
+    width: 100%;
+    height: 200px; /* Sets a fixed height */
+    border-radius: 10px; /* Adds rounded corners */
+    object-fit: cover; /* Ensures the media covers the container without stretching */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease; /* Adds a smooth transition for hover effect */
+}
+
+.gallery .item img:hover, 
+.gallery .item video:hover {
+    transform: scale(1.05); /* Slightly enlarges the media on hover for a dynamic effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.followBtn {
+    cursor: pointer;
+    padding: 5px 8px;
+    margin: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: black;
+    font-size: 21px;
+}
+
+.followBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px -10px;
+}
+
+.changePic {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.changePic div {
+    padding: 15px 80px;
+}
+
+.delete-btn,
+.cancel-btn,
+.upload-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+    .gallery .item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on medium screens */
+    }
+}
+
+@media (min-width: 900px) {
+    .gallery .item {
+        flex: 1 1 calc(33.333% - 20px); /* Three items per row on large screens */
+    }
+}
