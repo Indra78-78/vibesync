@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-// import logo from "../image/logo.png"; // Ensure the correct path
+import logo from "../image/logo.jpg"; // Ensure the correct path
 import "../css/navbar.css"; // Ensure the correct path
 import { Link } from "react-router-dom";
 import { LoginContext } from "../context/loginContext";
@@ -14,7 +14,7 @@ export default function Navbar({ login }) {
     if (login || token) {
       return (
         <>
-          {/* // <img src={logo} alt="logo"/> */}
+          <img src={logo} alt="logo"/>
           <Link to="/profile"><li key="profile">Profile</li></Link>
           <Link to="/createPost"><li key="createPost">Create Post</li></Link>
           <Link to="/followingpost"><li key="followingPost">Following</li></Link>
@@ -40,7 +40,7 @@ export default function Navbar({ login }) {
       return (
         <>
           <div className="nav-top">
-            {/* // <img src={logo} alt="logo" id="insta-logo" /> */}
+            <img src={logo} alt="logo" id="insta-logo" />
             <ul>
               <li className="notification"><Link to="/notification"><span className="material-symbols-outlined">notifications</span></Link></li>
               <li className="msg"><Link to="/Message"><AiFillMessage style={{ fontSize:"xxx-large" }} /></Link></li>
